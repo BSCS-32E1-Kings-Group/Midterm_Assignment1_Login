@@ -1,5 +1,42 @@
 ﻿@model loginregister.Models.RegisterModel
 
+<!-- Include jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Script to handle form submission and display popup -->
+<script>
+    $(document).ready(function () {
+        $('form').submit(function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var formData = $(this).serialize(); // Serialize form data
+
+            $.ajax({
+                url: '@Url.Action("RegisterView", "Account")',
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    alert(response.message); // Display success message as popup
+                    // Redirect to login page or perform other actions
+                    window.location.href = '/Account/LoginView'; // Example: redirect to login page
+                },
+                error: function (xhr) {
+                    if (xhr.status === 400) {
+                        var errors = xhr.responseJSON.errors; // Get validation errors
+                        var errorMessage = "Validation Errors:\n";
+                        errors.forEach(function (error) {
+                            errorMessage += "- " + error + "\n"; // Append each error message
+                        });
+                        alert(errorMessage); // Display validation errors as popup
+                    } else {
+                        alert("An error occurred. Please try again."); // Display generic error message
+                    }
+                }
+            });
+        });
+    });
+</script>
+
 <link href="/css/register.css" rel="stylesheet" />
 
 <div class="form_wrapper">
@@ -14,28 +51,28 @@
 
                     <div class="input_field">
                         <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <input asp-for="Email" type="email" placeholder="Email" required />
+                        <input asp-for="Email" type="email" placeholder="Email" />
                     </div>
 
                     <div class="input_field">
                         <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <input asp-for="Username" type="text" placeholder="Username" required />
+                        <input asp-for="Username" type="text" placeholder="Username" />
                         <span asp-validation-for="Username" class="text-danger"></span>
                     </div>
 
                     <div class="input_field">
                         <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                        <input asp-for="Password" type="password" placeholder="Password" required />
+                        <input asp-for="Password" type="password" placeholder="Password" />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
 
                     <div class="input_field">
                         <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                        <input asp-for="ConfirmPassword" type="password" placeholder="Re-type Password" required />
+                        <input asp-for="ConfirmPassword" type="password" placeholder="Re-type Password" />
                     </div>
 
                     <div class="input_field checkbox_option">
-                        <input asp-for="AgreeTerms" type="checkbox" id="cb1" required />
+                        <input asp-for="AgreeTerms" type="checkbox" id="cb1" />
                         <label for="cb1">I agree with terms and conditions</label>
                     </div>
 

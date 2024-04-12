@@ -29,3 +29,34 @@ E:\COLLEGE EDREL\COLLEGE\3RD YEAR\2ND SEM\CS ELECTIVE\GROUP\Midterm_Assignment1_
 E:\COLLEGE EDREL\COLLEGE\3RD YEAR\2ND SEM\CS ELECTIVE\GROUP\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.pdb
 E:\COLLEGE EDREL\COLLEGE\3RD YEAR\2ND SEM\CS ELECTIVE\GROUP\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.genruntimeconfig.cache
 E:\COLLEGE EDREL\COLLEGE\3RD YEAR\2ND SEM\CS ELECTIVE\GROUP\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\ref\loginregister.dll
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\bin\Debug\net8.0\appsettings.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\bin\Debug\net8.0\loginregister.staticwebassets.runtime.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\bin\Debug\net8.0\loginregister.exe
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\bin\Debug\net8.0\loginregister.deps.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\bin\Debug\net8.0\loginregister.runtimeconfig.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\bin\Debug\net8.0\loginregister.dll
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\bin\Debug\net8.0\loginregister.pdb
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.AssemblyInfoInputs.cache
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.AssemblyInfo.cs
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.csproj.CoreCompileInputs.cache
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.RazorAssemblyInfo.cache
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.RazorAssemblyInfo.cs
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.sourcelink.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\staticwebassets\msbuild.loginregister.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\staticwebassets\msbuild.build.loginregister.props
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.loginregister.props
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.loginregister.props
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\scopedcss\bundle\loginregister.styles.css
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\scopedcss\projectbundle\loginregister.bundle.scp.css
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.dll
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\refint\loginregister.dll
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.pdb
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\loginregister.genruntimeconfig.cache
+C:\Users\This PC\Documents\GitHub\Midterm_Assignment1_Login\loginregister\obj\Debug\net8.0\ref\loginregister.dll
