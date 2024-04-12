@@ -33,4 +33,10 @@ public class AccountController : Controller
         // Implement your login action/view here
         return View();
     }
+
+    public IActionResult DashboardView()
+    {
+        // Implement your login action/view here
+        return View();
+    }
 }
