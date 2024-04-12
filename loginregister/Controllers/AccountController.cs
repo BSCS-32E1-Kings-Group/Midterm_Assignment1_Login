@@ -8,5 +8,10 @@ namespace loginregister.Controllers
         {
             return View();
         }
+
+        public IActionResult RegisterView()
+        {
+            return View();
+        }
     }
 }

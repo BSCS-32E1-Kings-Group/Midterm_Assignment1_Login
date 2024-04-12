@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\COLLEGE EDREL\COLLEGE\3RD YEAR\2ND SEM\CS ELECTIVE\GROUP\Midterm_Assignment1_Login\loginregister
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Account/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Account/LoginView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpblZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Account/RegisterView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Home/Index.cshtml]
