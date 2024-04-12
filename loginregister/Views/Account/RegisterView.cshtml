@@ -1,0 +1,47 @@
+﻿@model loginregister.Models.RegisterModel
+
+<link href="/css/register.css" rel="stylesheet" />
+
+<div class="form_wrapper">
+    <div class="form_container">
+        <div class="title_container">
+            <h2>Registration Form</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="">
+                <form asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="input_field">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input asp-for="Email" type="email" placeholder="Email" required />
+                    </div>
+
+                    <div class="input_field">
+                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <input asp-for="Username" type="text" placeholder="Username" required />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+
+                    <div class="input_field">
+                        <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <input asp-for="Password" type="password" placeholder="Password" required />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="input_field">
+                        <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <input asp-for="ConfirmPassword" type="password" placeholder="Re-type Password" required />
+                    </div>
+
+                    <div class="input_field checkbox_option">
+                        <input asp-for="AgreeTerms" type="checkbox" id="cb1" required />
+                        <label for="cb1">I agree with terms and conditions</label>
+                    </div>
+
+                    <input class="button" type="submit" value="Register" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

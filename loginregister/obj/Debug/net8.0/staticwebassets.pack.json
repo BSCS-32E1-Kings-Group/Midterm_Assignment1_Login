@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
+      "Id": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
       "Id": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
