@@ -1,32 +1,45 @@
 ﻿using loginregister.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace loginregister.Controllers
+public class AccountController : Controller
 {
-    public class AccountController : Controller
+    public IActionResult RegisterView()
     {
-        // GET: /Account/Register
-        public IActionResult RegisterView()
-        {
-            return View();
-        }
-
-        // POST: /Account/Register
-        [HttpPost]
-        public IActionResult Register(RegisterModel model)
-        {
-            // Process registration logic here...
-            // Assuming registration logic is completed successfully
-
-            // Redirect to LoginView after successful registration
-            return RedirectToAction("LoginView");
-        }
-
-        // GET: /Account/Login
-        public IActionResult LoginView()
-        {
-            // Implement your login action/view here
-            return View();
-        }
+        return View();
     }
+
+    [HttpPost]
+    public IActionResult RegisterView(RegisterModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            // Collect all validation error messages
+            var errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage));
+
+            // Return validation errors as JSON response
+            return BadRequest(new { Errors = errors });
+        }
+
+        // Simulate registration (for demonstration purposes only)
+        // Here you would typically handle registration logic (e.g., saving to a database)
+        TempData["Message"] = "Registration successful! Please log in.";
+
+        // Return a success message as JSON response
+        return Ok(new { Message = "Registration successful" });
+    }
+
+    public IActionResult LoginView()
+    {
+        // Implement your login action/view here
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Login(LoginModel model)
+    {
+
+        // Redirect to homepage after successful login
+        return RedirectToAction("Index", "Home");
+    }
+
 }
