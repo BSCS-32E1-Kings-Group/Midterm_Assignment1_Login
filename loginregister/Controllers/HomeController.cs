@@ -15,6 +15,7 @@ namespace loginregister.Controllers
 
         public IActionResult Index()
         {
+            ViewData["WelcomeMessage"] = "Welcome to our website!";
             return View();
         }
 

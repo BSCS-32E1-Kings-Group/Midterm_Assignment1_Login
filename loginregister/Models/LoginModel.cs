@@ -2,11 +2,9 @@
 
 namespace loginregister.Models
 {
-    public class LoginModel : Controller
+    public class LoginModel
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }
