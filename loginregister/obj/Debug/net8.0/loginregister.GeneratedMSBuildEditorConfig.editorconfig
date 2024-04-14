@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = loginregister
 build_property.RootNamespace = loginregister
-build_property.ProjectDir = E:\COLLEGE EDREL\COLLEGE\3RD YEAR\2ND SEM\CS ELECTIVE\GROUP\Midterm_Assignment1_Login\loginregister\
+build_property.ProjectDir = C:\Users\This PC\source\repos\Midterm_Assignment1_Login\Midterm_Assignment1_Login\loginregister\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\COLLEGE EDREL\COLLEGE\3RD YEAR\2ND SEM\CS ELECTIVE\GROUP\Midterm_Assignment1_Login\loginregister
+build_property.MSBuildProjectDirectory = C:\Users\This PC\source\repos\Midterm_Assignment1_Login\Midterm_Assignment1_Login\loginregister
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Account/DashboardView.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Account/DashboardView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEYXNoYm9hcmRWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Account/Home.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Account/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Account/LoginView.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Account/LoginView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpblZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Account/RegisterView.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Account/RegisterView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Home/Index.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Home/Privacy.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Shared/Error.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/_ViewImports.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/_ViewStart.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/COLLEGE EDREL/COLLEGE/3RD YEAR/2ND SEM/CS ELECTIVE/GROUP/Midterm_Assignment1_Login/loginregister/Views/Shared/_Layout.cshtml]
+[C:/Users/This PC/source/repos/Midterm_Assignment1_Login/Midterm_Assignment1_Login/loginregister/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9i1gcjbep7

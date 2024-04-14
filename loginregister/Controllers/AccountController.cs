@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 public class AccountController : Controller
 {
+    private static List<RegisterModel> registeredUsers = new List<RegisterModel>();
+
     public IActionResult RegisterView()
     {
         return View();
@@ -20,26 +22,47 @@ public class AccountController : Controller
             return BadRequest(new { Errors = errors });
         }
 
-        // Simulate registration (for demonstration purposes only)
-        // Here you would typically handle registration logic (e.g., saving to a database)
-        TempData["Message"] = "Registration successful! Please log in.";
+        // Add to mem
+        registeredUsers.Add(model);
 
-        // Return a success message as JSON response
-        return Ok(new { Message = "Registration successful" });
+        return Ok(new { Message = "Registration successful! Please log in." });
     }
 
     public IActionResult LoginView()
     {
-        // Implement your login action/view here
+        // Display login view
         return View();
     }
 
     [HttpPost]
     public IActionResult Login(LoginModel model)
     {
+        if (!ModelState.IsValid)
+        {
+            // If model state is not valid, show errors
+            return View("LoginView", model);
+        }
 
-        // Redirect to homepage after successful login
-        return RedirectToAction("Index", "Home");
+        // Validate tcredentials
+        if (IsUserAuthenticated(model.Username, model.Password))
+        {
+            return RedirectToAction("Index", "Home");
+        }
+        else
+        {
+            // if credentials are invalid
+            ModelState.AddModelError("", "Invalid username or password");
+
+            // Return the login view with the model containing the error
+            return View("LoginView", model);
+        }
     }
 
+    private bool IsUserAuthenticated(string username, string password)
+    {
+        // Here you would typically query your database to validate the user's credentials
+        // For demonstration purposes, let's check against the in-memory collection
+        var user = registeredUsers.FirstOrDefault(u => u.Username == username && u.Password == password);
+        return user != null;
+    }
 }
