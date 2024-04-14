@@ -34,9 +34,12 @@ public class AccountController : Controller
         return View();
     }
 
-    public IActionResult DashboardView()
+    [HttpPost]
+    public IActionResult Login(LoginModel model)
     {
-        // Implement your login action/view here
-        return View();
+
+        // Redirect to homepage after successful login
+        return RedirectToAction("Index", "Home");
     }
+
 }
