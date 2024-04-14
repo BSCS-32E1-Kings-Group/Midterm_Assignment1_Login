@@ -3,7 +3,6 @@
 <!-- Include jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Script to handle form submission and display popup -->
 <script>
     $(document).ready(function () {
         $('form').submit(function (event) {
@@ -16,9 +15,9 @@
                 type: 'POST',
                 data: formData,
                 success: function (response) {
-                    alert(response.message); // Display success message as popup
-                    // Redirect to login page or perform other actions
-                    window.location.href = '/Account/LoginView'; // Example: redirect to login page
+                    alert(response.message); 
+
+                    window.location.href = '/Account/LoginView'; 
                 },
                 error: function (xhr) {
                     if (xhr.status === 400) {
@@ -27,9 +26,9 @@
                         errors.forEach(function (error) {
                             errorMessage += "- " + error + "\n"; // Append each error message
                         });
-                        alert(errorMessage); // Display validation errors as popup
+                        alert(errorMessage); 
                     } else {
-                        alert("An error occurred. Please try again."); // Display generic error message
+                        alert("An error occurred. Please try again."); 
                     }
                 }
             });
