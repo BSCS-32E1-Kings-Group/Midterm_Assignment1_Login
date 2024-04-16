@@ -1,5 +1,6 @@
 ﻿using loginregister.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Cryptography;
 
 public class AccountController : Controller
 {
@@ -7,31 +8,53 @@ public class AccountController : Controller
 
     public IActionResult RegisterView()
     {
-        return View();
+        return View(new RegisterModel());
+    }
+
+    public IActionResult LoginView()
+    {
+        return View(new LoginModel());
     }
 
     [HttpPost]
     public IActionResult RegisterView(RegisterModel model)
     {
+        Console.WriteLine($"Received RegisterModel: Email={model.Email}, Username={model.Username}, PasswordHash={(model.PasswordHash != null ? "Populated" : "Not populated")}, PasswordSalt={(model.PasswordSalt != null ? "Populated" : "Not populated")}");
+
         if (!ModelState.IsValid)
         {
-            // Collect all validation error messages
             var errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage));
-
-            // Return validation errors as JSON response
-            return BadRequest(new { Errors = errors });
+            Console.WriteLine("ModelState errors:");
+            foreach (var error in errors)
+            {
+                Console.WriteLine($"- {error}");
+            }
         }
 
-        // Add to mem
-        registeredUsers.Add(model);
+        // Hash the password using PBKDF2
+        (model.PasswordHash, model.PasswordSalt) = HashPassword(model.Password);
+
+        // Check if PasswordHash and PasswordSalt are populated
+        if (model.PasswordHash == null || model.PasswordSalt == null)
+        {
+            ModelState.AddModelError("", "PasswordHash or PasswordSalt was not generated correctly.");
+            return BadRequest(new { Errors = "PasswordHash or PasswordSalt was not generated correctly." });
+        }
+
+        // Create a new user with necessary fields
+        var newUser = new RegisterModel
+        {
+            Email = model.Email,
+            Username = model.Username,
+            AgreeTerms = model.AgreeTerms,
+            PasswordHash = model.PasswordHash,
+            PasswordSalt = model.PasswordSalt
+        };
+
+        // Add the user to the list of registered users
+        registeredUsers.Add(newUser);
 
         return Ok(new { Message = "Registration successful! Please log in." });
-    }
-
-    public IActionResult LoginView()
-    {
-        // Display login view
-        return View();
     }
 
     [HttpPost]
@@ -43,26 +66,57 @@ public class AccountController : Controller
             return View("LoginView", model);
         }
 
-        // Validate tcredentials
+        // Validate credentials
         if (IsUserAuthenticated(model.Username, model.Password))
         {
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Home"); // Redirect to home page upon successful login
         }
         else
         {
-            // if credentials are invalid
             ModelState.AddModelError("", "Invalid username or password");
-
-            // Return the login view with the model containing the error
-            return View("LoginView", model);
+            return View("LoginView", model); // Return to login view with error message
         }
     }
 
     private bool IsUserAuthenticated(string username, string password)
     {
-        // Here you would typically query your database to validate the user's credentials
-        // For demonstration purposes, let's check against the in-memory collection
-        var user = registeredUsers.FirstOrDefault(u => u.Username == username && u.Password == password);
-        return user != null;
+        var user = registeredUsers.FirstOrDefault(u => u.Username == username);
+
+        if (user == null)
+            return false;
+
+        // Validate the password using PBKDF2
+        return ValidatePassword(password, user.PasswordHash, user.PasswordSalt);
+    }
+
+    private bool ValidatePassword(string password, byte[] savedHash, byte[] savedSalt)
+    {
+        using (var deriveBytes = new Rfc2898DeriveBytes(password, savedSalt, 10000))
+        {
+            byte[] inputHash = deriveBytes.GetBytes(20); // 20 is the size of the hash
+
+            // Compare the hashes
+            for (int i = 0; i < 20; i++)
+            {
+                if (inputHash[i] != savedHash[i])
+                    return false;
+            }
+        }
+
+        return true;
+    }
+
+    // Helper method to hash the password using PBKDF2
+    private (byte[], byte[]) HashPassword(string password)
+    {
+        byte[] salt;
+        new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+
+        using (var deriveBytes = new Rfc2898DeriveBytes(password, salt, 10000))
+        {
+            byte[] hash = deriveBytes.GetBytes(20); // 20 is the size of the hash
+
+            return (hash, salt);
+        }
     }
 }
