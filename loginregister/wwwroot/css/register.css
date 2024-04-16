@@ -94,19 +94,19 @@
                 padding-top: 10px;
             }
 
-        .toggle {
-            background: none;
-            border: none;
-            color: #337ab7;
-            /*display: none;*/
-            /*font-size: .9em;*/
-            font-weight: 600;
-            /*padding: .5em;*/
-            position: absolute;
-            right: .75em;
-            top: 0.4em;
-            z-index: 9;
-        }
+.toggle {
+    background: none;
+    border: none;
+    color: #f5ba1a;
+    /*display: none;*/
+    /*font-size: .9em;*/
+    font-weight: 600;
+    /*padding: .5em;*/
+    position: absolute;
+    right: .75em;
+    top: 0.4em;
+    z-index: 9;
+}
 
     .form_wrapper .textarea_field > span > i {
         padding-top: 10px;
