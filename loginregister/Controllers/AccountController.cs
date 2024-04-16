@@ -16,6 +16,11 @@ public class AccountController : Controller
         return View(new LoginModel());
     }
 
+    public IActionResult DashboardView()
+    {
+        return View();
+    }
+
     [HttpPost]
     public IActionResult RegisterView(RegisterModel model)
     {
