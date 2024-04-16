@@ -1,7 +1,27 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+
+
+builder.Services.AddSession(options =>
+{
+    options.Cookie.Name = ".MyApp.Session";
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Adjust timeout as needed
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+
+
+
 
 var app = builder.Build();
 
@@ -19,6 +39,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+// Enable session middleware
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

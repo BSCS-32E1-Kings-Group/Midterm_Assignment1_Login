@@ -66,14 +66,47 @@ public class AccountController : Controller
             return View("LoginView", model);
         }
 
+        // Check if the user exists
+        var user = registeredUsers.FirstOrDefault(u => u.Username == model.Username);
+
+        if (user == null)
+        {
+            // User not found, display "Invalid username or password"
+            ModelState.AddModelError("", "Invalid username or password");
+            return View("LoginView", model);
+        }
+
+
+
+
+        // Retrieve or initialize login attempt count for the user
+        int loginAttemptCount = HttpContext.Session.GetInt32("LoginAttemptCount") ?? 0;
+
+        // Check if the user has exceeded the allowed login attempts
+        if (loginAttemptCount == 2)
+        {
+            ModelState.AddModelError("", "Login attempts exceeded. Please register again.");
+            return View("LoginView", model);
+        }
+
         // Validate credentials
         if (IsUserAuthenticated(model.Username, model.Password))
         {
-            return RedirectToAction("Index", "Home"); // Redirect to home page upon successful login
+            // Reset login attempt count upon successful login
+            HttpContext.Session.SetInt32("LoginAttemptCount", 0);
+            return RedirectToAction("DashboardView", "Account"); // Redirect to home page upon successful login
         }
         else
         {
-            ModelState.AddModelError("", "Invalid username or password");
+            // Calculate remaining attempts
+            int remainingAttempts = 2 - loginAttemptCount;
+
+            // Increment login attempt count and save it in session
+            loginAttemptCount++;
+            HttpContext.Session.SetInt32("LoginAttemptCount", loginAttemptCount);
+
+
+            ModelState.AddModelError("", $"Invalid username or password. {remainingAttempts} attempts remaining.");
             return View("LoginView", model); // Return to login view with error message
         }
     }
