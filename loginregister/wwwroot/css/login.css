@@ -1,6 +1,4 @@
-﻿@import "bourbon";
-
-body {
+﻿body {
     background: #eee !important;
 }
 
@@ -44,16 +42,24 @@ body {
         border-top-right-radius: 0;
     }
 
-    .toggle {
-        background: none;
-        border: none;
-        color: #337ab7;
-        /*display: none;*/
-        /*font-size: .9em;*/
-        font-weight: 600;
-        /*padding: .5em;*/
-        position: absolute;
-        right: 50.75em;
-        top: 17.4em;
-        z-index: 9;
-    }
+.toggle {
+    background: none;
+    border: none;
+    color: #f5ba1a;
+    /*display: none;*/
+    /*font-size: .9em;*/
+    font-weight: 600;
+    /*padding: .5em;*/
+    position: absolute;
+    right: 50.75em;
+    top: 17.4em;
+    z-index: 9;
+}
+
+.button {
+    background-color: #f5ba1a;
+}
+
+.wrapper input[type="username"]:focus, input[type="password"]:focus {
+    border-color: #f5ba1a;
+}
