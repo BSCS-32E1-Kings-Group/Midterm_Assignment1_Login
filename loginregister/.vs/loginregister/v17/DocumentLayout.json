@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|e:\\college edrel\\college\\3rd year\\2nd sem\\cs elective\\group\\midterm_assignment1_login\\loginregister\\views\\account\\registerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|solutionrelative:views\\account\\registerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|e:\\college edrel\\college\\3rd year\\2nd sem\\cs elective\\group\\midterm_assignment1_login\\loginregister\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|solutionrelative:models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|e:\\college edrel\\college\\3rd year\\2nd sem\\cs elective\\group\\midterm_assignment1_login\\loginregister\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|solutionrelative:models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|e:\\college edrel\\college\\3rd year\\2nd sem\\cs elective\\group\\midterm_assignment1_login\\loginregister\\views\\account\\loginview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|solutionrelative:views\\account\\loginview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|e:\\college edrel\\college\\3rd year\\2nd sem\\cs elective\\group\\midterm_assignment1_login\\loginregister\\sesionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|solutionrelative:sesionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|e:\\college edrel\\college\\3rd year\\2nd sem\\cs elective\\group\\midterm_assignment1_login\\loginregister\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5F8677-A546-43F0-AA08-AD294405C8D6}|loginregister.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +30,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterView.cshtml",
-              "DocumentMoniker": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Views\\Account\\RegisterView.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\RegisterView.cshtml",
-              "ToolTip": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Views\\Account\\RegisterView.cshtml",
-              "RelativeToolTip": "Views\\Account\\RegisterView.cshtml",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "SesionExtensions.cs",
+              "DocumentMoniker": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\SesionExtensions.cs",
+              "RelativeDocumentMoniker": "SesionExtensions.cs",
+              "ToolTip": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\SesionExtensions.cs",
+              "RelativeToolTip": "SesionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T16:07:00.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T16:03:42.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginView.cshtml",
+              "DocumentMoniker": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Views\\Account\\LoginView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\LoginView.cshtml",
+              "ToolTip": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Views\\Account\\LoginView.cshtml",
+              "RelativeToolTip": "Views\\Account\\LoginView.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwCkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T15:46:42.495Z",
+              "WhenOpened": "2024-04-16T16:01:03.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginModel.cs",
+              "ToolTip": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Models\\LoginModel.cs",
+              "RelativeToolTip": "Models\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T16:01:01.303Z",
               "EditorCaption": ""
             },
             {
@@ -45,22 +92,9 @@
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAcwHgAAAAFAAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAUwFUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T15:45:42.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterModel.cs",
-              "DocumentMoniker": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Models\\RegisterModel.cs",
-              "RelativeDocumentMoniker": "Models\\RegisterModel.cs",
-              "ToolTip": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\Models\\RegisterModel.cs",
-              "RelativeToolTip": "Models\\RegisterModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T15:44:39.908Z",
               "EditorCaption": ""
             }
           ]
