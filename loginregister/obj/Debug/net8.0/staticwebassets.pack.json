@@ -25,6 +25,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\wwwroot\\images\\homepage.png",
+      "PackagePath": "staticwebassets\\images\\homepage.png"
+    },
+    {
+      "Id": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\wwwroot\\images\\homepage.svg",
+      "PackagePath": "staticwebassets\\images\\homepage.svg"
+    },
+    {
       "Id": "E:\\COLLEGE EDREL\\COLLEGE\\3RD YEAR\\2ND SEM\\CS ELECTIVE\\GROUP\\Midterm_Assignment1_Login\\loginregister\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
