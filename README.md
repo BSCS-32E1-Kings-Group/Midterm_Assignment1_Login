@@ -10,6 +10,7 @@ This repository contains a user registration and login system developed to demon
 - Username must be at least 6 characters long and cannot contain spaces.
 - Password must be at least 8 characters long and meet complexity requirements (include at least one uppercase letter, lowercase letter, number, and special character).
 - Upon successful registration, users are redirected to the login page or presented with a confirmation message.
+- Usernames must be unique within the current user session (no database storage).
   
 ### User Login
 - Registered users can log in to the application using their username and password.
