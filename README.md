@@ -19,5 +19,8 @@ This repository contains a user registration and login system developed to demon
 - Login attempts are limited to 3 consecutive failures. After exceeding the limit, users are prompted with a message indicating the remaining attempts and suggesting re-registration.
 - Informative error messages are displayed for invalid username or password, indicating the number of attempts remaining.
 
+### Security
+- Password Hashing and validation are implemented using a secure algorithm.
+- The system enforces complexity requirements for pssword to enhance security.
 
 
