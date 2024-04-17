@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.ComponentModel.DataAnnotations;
 
 namespace loginregister.Models
@@ -26,7 +27,10 @@ namespace loginregister.Models
         [Range(typeof(bool), "true", "true", ErrorMessage = "You must agree to the terms and conditions")]
         public bool AgreeTerms { get; set; }
 
+        [BindNever]
         public byte[] PasswordHash { get; set; }
+
+        [BindNever]
         public byte[] PasswordSalt { get; set; }
     }
 }

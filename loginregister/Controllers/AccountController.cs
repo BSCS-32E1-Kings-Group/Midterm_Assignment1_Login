@@ -24,17 +24,22 @@ public class AccountController : Controller
     [HttpPost]
     public IActionResult RegisterView(RegisterModel model)
     {
-        Console.WriteLine($"Received RegisterModel: Email={model.Email}, Username={model.Username}, PasswordHash={(model.PasswordHash != null ? "Populated" : "Not populated")}, PasswordSalt={(model.PasswordSalt != null ? "Populated" : "Not populated")}");
+        // Manually remove PasswordHash and PasswordSalt from model state
+        ModelState.Remove(nameof(model.PasswordHash));
+        ModelState.Remove(nameof(model.PasswordSalt));
 
         if (!ModelState.IsValid)
         {
-            var errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage));
-            Console.WriteLine("ModelState errors:");
-            foreach (var error in errors)
-            {
-                Console.WriteLine($"- {error}");
-            }
+            var errors = ModelState.Values
+                .SelectMany(v => v.Errors)
+                .Select(e => e.ErrorMessage)
+                .ToList();
+
+            // Return validation errors as JSON response
+            return BadRequest(new { Errors = errors });
         }
+
+        Console.WriteLine($"Received RegisterModel: Email={model.Email}, Username={model.Username}, PasswordHash={(model.PasswordHash != null ? "Populated" : "Not populated")}, PasswordSalt={(model.PasswordSalt != null ? "Populated" : "Not populated")}");
 
         // Hash the password using PBKDF2
         (model.PasswordHash, model.PasswordSalt) = HashPassword(model.Password);
