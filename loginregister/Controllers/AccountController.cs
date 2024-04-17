@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 public class AccountController : Controller
 {
     private static List<RegisterModel> registeredUsers = new List<RegisterModel>();
+    private static HashSet<string> registeredUsernames = new HashSet<string>();
 
     public IActionResult RegisterView()
     {
@@ -27,6 +28,12 @@ public class AccountController : Controller
         // Manually remove PasswordHash and PasswordSalt from model state
         ModelState.Remove(nameof(model.PasswordHash));
         ModelState.Remove(nameof(model.PasswordSalt));
+
+        // Check if username is already in use within the current session
+        if (registeredUsernames.Contains(model.Username))
+        {
+            ModelState.AddModelError(nameof(model.Username), "This username is already taken. Please choose another.");
+        }
 
         if (!ModelState.IsValid)
         {
@@ -63,6 +70,7 @@ public class AccountController : Controller
 
         // Add the user to the list of registered users
         registeredUsers.Add(newUser);
+        registeredUsernames.Add(newUser.Username);
 
         return Ok(new { Message = "Registration successful! Please log in." });
     }
